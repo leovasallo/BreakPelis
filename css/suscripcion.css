@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* iconos */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+main{
+    background-color: #313133;
+}
+.texto-principal {
+    position: relative;
+    text-align: center;
+}
+
+.part1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), 
+    url(https://i.pinimg.com/originals/10/b1/ba/10b1bad21f79df5f462c1c09f12db6ff.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* boton neon */
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #dc143c21;
+    border-radius: 3px;
+}
+.btn-neon:hover{
+    background: #dc143c;
+    box-shadow: 0 0 10px #dc143c, 0 0 40px #dc143c, 0 0 80px #dc143c;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#dc143c);
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#dc143c);
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#dc143c);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#dc143c);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 3.5%;
+}
+
+
+#suscripcion{
+    padding: 30px;
+    color: white;
+}
+
+input:hover{
+    transition: 0.2s;
+    border-color: #dc143c;
+}
+
+/* boton login */
+@media (max-width: 992px) {
+.navbar-collapse {
+    flex-direction: column;
+    }
+.boton-custom {
+    width: 100%;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .btn-neon{
+        font-size: 12px;
+    }
+}

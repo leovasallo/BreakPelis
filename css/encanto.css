@@ -1,0 +1,117 @@
+/*  icons   */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/*  ------  */
+.boton-custom
+{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    margin-right: 60px;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.boton-custom:hover
+{
+    background-color: rgb(176, 5, 40);
+    color: #ffffff;
+    border-radius: 8px;
+}
+    .navbar-brand img {
+        height: 60px; 
+        width: auto;
+    }
+
+      /* UNDERLINE ANIMADO */
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px; /* Ajustar la posición del subrayado */
+        left: 0;
+        background-color: #ffffff; /* Color del subrayado */
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* boton login */
+    @media (max-width: 992px) {
+        .navbar-collapse {
+            flex-direction: column;
+        }
+        .boton-custom {
+            width: 100%;
+        }
+    }
+
+#movie{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), 
+    url(https://www.xtrafondos.com/wallpapers/todos-los-personajes-de-encanto-8955.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.text-box{
+    position: relative;
+    text-align: start;
+    padding-left: 50px;
+    padding-right: 35px;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botones{
+    font-size: 25px;
+}
+
+.tiempo{
+    padding-top: 20px;
+}
+
+#sugerencias{
+    padding: 30px 30px 30px 30px;
+    background-color: #212121;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5%);
+    transition: 400ms;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+

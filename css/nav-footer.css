@@ -1,0 +1,175 @@
+* {
+    font-family: Arial;
+  }
+  
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+  
+  .btn-custom {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  .navbar-brand img {
+    height: 80px; 
+  }
+  
+  .boton-custom {
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    margin-right: 60px;
+    width: 130px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .boton-custom:hover {
+    opacity: .8;
+    background-color: crimson;
+    color: #ffffff;
+    border-radius: 6px;
+  }
+  
+  .boton-register {
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    margin-right: 60px;
+    width: 130px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+  
+  .boton-register:hover
+  {
+    opacity: .8;
+    background-color: crimson;
+    color: #ffffff;
+    border-radius: 6px;
+  }
+  
+  .navbar-brand img {
+    height: 60px; 
+    width: auto;
+  }
+  
+  /* UNDERLINE ANIMADO */
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Botón login */
+  @media (max-width: 992px) {
+    .bts-responsives{
+      margin-left: 12px;
+    }
+    .navbar-collapse {
+      flex-direction: column;
+    }
+    .boton-custom {
+      width: 55%;
+      font-size: 16px;
+    }
+    .boton-register {
+      width: 55%;
+      font-size: 16px;
+    }
+  }
+
+/* FOOTER */
+
+.footer {
+    width: auto;
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  
+  
+  .social-icons-container, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  
+  .social-icon {
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  
+  .social-icon:hover {
+    background-color: #121212;
+    filter: invert(1);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+  }
+  
+  .social-icon:nth-of-type(1) {
+    background-image: url(/assets/FacebookBlanco.png);
+  }
+  
+  .social-icon:nth-of-type(2) {
+    background-image: url(/assets/InstagramBlanco.png);
+  }
+  
+  .social-icon:nth-of-type(3) {
+    background-image: url(/assets/LinkedinBlanco.png);
+  }
+  
+  .social-icon:nth-of-type(4) {
+    background-image: url(/assets/Xblanco.png);
+  }
+  
+  .footer a{
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  .anc-footer
+  {
+    padding-bottom: 10px;
+  }
+  
+  .copyright {
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+    margin-left: 16px;
+  }
+  
